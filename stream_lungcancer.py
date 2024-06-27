@@ -60,10 +60,10 @@ if st.button('Test Prediksi Kanker Paru-Paru'):
                                            categorical_mapping[Chronic_Disease], categorical_mapping[Fatigue],categorical_mapping[Allergy],categorical_mapping[Wheezing],categorical_mapping[Alcohol_Consuming],
                                            categorical_mapping[Coughing],categorical_mapping[Shortness],categorical_mapping[Swallow],categorical_mapping[Chest]]])
     if(lungcancer_prediction[0] == 1):
-        lungcancer_diagnonis = 'Pasien terkena Kanker Paru-Paru'
+        lungcancer_diagnonis = 'Model memprediksi pasien kemungkinan terkena Kanker Paru-Paru'
         st.error(lungcancer_diagnonis)
     else :
-        lungcancer_diagnonis = 'Pasien tidak terkena Kanker Paru-Paru'
+        lungcancer_diagnonis = 'Model memprediksi pasien kemungkinan tidak terkena Kanker Paru-Paru'
         st.success(lungcancer_diagnonis)
     
 # Footer
